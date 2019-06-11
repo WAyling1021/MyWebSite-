@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body{
+     background-image: url("background-blue-white-3d.jpg");
+     background-repeat: repeat-;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helios White', arial;
+  font-size: 25px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+/* Style the header */
+header {
+  
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; 
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  height: 300px; 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Welcome to my first web page!</h2>
+
+<header>
+  <h2>What's up?</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <div class="topnav">
+<a class="home.html">Home</a> 
+<a href="About Me.html">About Me</a> 
+<a href="Contact.html">Contact</a>
+<a href="Projects.html">Projects</a>  
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Hi my name is William Ayling, you can call me Will. I just learned today how to code out some examples on how to change the background color. I also learned how to change the text location on the page. There is plenty to learn and this is only the beginning. Thanks for stopping by and don't forget to check my "About Me" page to learn a little more about me!</h1>
+  </article>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img src="devcodecamp-2018-june-15-1024x683.jpg" width="550" height="450"> 
+</html> 
